@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agung & Silva's Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="batik-top"></div>
+    <div id="cover" class="cover">
+        <div class="cover-content">
+            <h1>Agung Wahyudin & Silva Patonah</h1>
+            <p>16 September 2024</p>
+            <button id="openButton" class="open-button">Buka Undangan</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Agung Wahyudin & Silva Patonah</h1>
+            <h2>Undangan Pernikahan</h2>
+        </header>
+        <section class="countdown">
+            <h3>Hitung mundur menuju acara</h3>
+            <div id="countdown-timer"></div>
+        </section>
+
+        <section class="quran-verse">
+            <blockquote>
+                <p class="arabic-script">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا
+                    إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ
+                    يَتَفَكَّرُونَ</p>
+                <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu dari jenismu sendiri
+                    pasangan-pasangan, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu
+                    rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi
+                    kaum yang berfikir."</p>
+                <footer>— Surah Ar-Rum, 30:21</footer>
+            </blockquote>
+        </section>
+
+        <section class="event-details">
+            <h3>Akad Nikah</h3>
+            <p>Tanggal: Senin, 16 September 2024</p>
+            <p>Lokasi: Kp. Cibeuneur RT 01 RW 06 Desa Ganjar Sabar Kecamatan Nagreg</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1069.2287047822576!2d107.87995576363406!3d-7.022541769059247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2ssg!4v1725066579678!5m2!1sid!2ssg" width="480" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="rsvp">
+            <h3>RSVP</h3>
+            <form id="rsvpForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="attendance">Apakah akan hadir?</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="yes">Ya</option>
+                    <option value="no">Tidak</option>
+                </select>
+                <br>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="thankYouMessage" class="hidden">
+                <p>Terima kasih atas konfirmasi kehadiran Anda!</p>
+            </div>
+        </section>
+
+        <section class="comments-section">
+            <h3>Komentar Tamu</h3>
+            <form id="commentForm">
+                <label for="guestName">Nama Anda:</label>
+                <input type="text" id="guestName" placeholder="Nama anda" required>
+                <label for="comment">Pesan Anda:</label>
+                <textarea id="comment" placeholder="Pesan anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="comments"></div>
+        </section>
+    </div>
+    <div class="batik-bottom"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

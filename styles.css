@@ -1,0 +1,206 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('path-to-background-pattern.jpg') repeat center center;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.cover-content {
+    text-align: center;
+}
+
+.cover h1 {
+    font-family: 'Great Vibes', 'Parisienne', cursive;
+    font-size: 48px;
+    color: #d4af37;
+}
+
+.cover p {
+    font-size: 20px;
+    color: #666;
+}
+
+.open-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #d4af37;
+    font-family: 'Great Vibes', 'Parisienne', cursive;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-family: 'Parisienne', cursive;
+}
+
+.arabic-script {
+    font-family: 'Amiri', serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    direction: rtl;
+}
+
+.countdown, .quran-verse, .event-details, .comments-section, .rsvp {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+}
+
+.countdown h3, .event-details h3, .comments-section h3, .rsvp h3 {
+    font-size: 24px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+#countdown-timer {
+    font-size: 20px;
+    color: #d4af37;
+}
+
+.quran-verse {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.event-details p, .comments-section p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #d4af37;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#rsvpForm, #commentForm {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rsvpForm input, #rsvpForm textarea,
+#commentForm input, #commentForm textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#rsvpForm button, #commentForm button {
+    padding: 10px 20px;
+    background-color: #d4af37;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rsvpForm button:hover, #commentForm button:hover {
+    background-color: #b38a1d;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4af37;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    animation: fadeIn 2s;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+#comments {
+    margin-top: 20px;
+}
+
+.comments {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    animation: fadeIn 1s;
+}
+
+.batik-top, .batik-bottom {
+    background: url('asset/batik1.png') no-repeat center;
+    height: 100px; /* Adjust as needed */
+    width: 100%;
+    background-size: cover; /* Ensures the pattern covers the area */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
